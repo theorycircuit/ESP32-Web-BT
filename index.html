@@ -95,7 +95,7 @@
       try {
         device = await navigator.bluetooth.requestDevice({
           filters: [{ name: 'ESP32_GPIO_Control' }],
-          optionalServices: ['19b10000-e8f2-537e-4f6c-d104768a1214']
+          optionalServices: ['12345678-1234-1234-1234-123456789abc']
         });
 
         server = await device.gatt.connect();
